@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English Learning App</title>
+<style>
+body {
+  font-family: Arial;
+  background: #eef5ff;
+  text-align: center;
+  padding: 20px;
+}
+.box {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  max-width: 400px;
+  margin: 30px auto;
+}
+h1 { color: #2457c5; }
+button {
+  background: #2457c5;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  margin: 8px;
+  font-size: 16px;
+}
+</style>
+</head>
+<body>
+<div class="box">
+<h1>Learn English</h1>
+<p>Welcome to English Learning App!</p>
+
+<h2>Daily English Words</h2>
+<p>Apple = Seb</p>
+<p>Water = Pani</p>
+<p>Book = Kitab</p>
+<p>Friend = Dost</p>
+
+<h2>Practice English</h2>
+<p id="question">What is the meaning of Apple?</p>
+<button onclick="check('Seb')">Seb</button>
+<button onclick="check('Pani')">Pani</button>
+<p id="result"></p>
+</div>
+
+<script>
+function check(answer) {
+  if(answer === 'Seb') {
+    document.getElementById('result').innerText =
+    'Correct! Very good!';
+  } else {
+    document.getElementById('result').innerText =
+    'Try again!';
+  }
+}
+</script>
+</body>
+                                    </html>
+                                    
